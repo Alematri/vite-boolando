@@ -1,0 +1,23 @@
+@use './variables' as *;
+
+body{
+  font-family: sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  nav{
+    ul{
+      a{
+        font-weight: bold;
+        color: $white;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
