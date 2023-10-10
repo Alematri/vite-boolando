@@ -45,6 +45,7 @@
 
   header{
   position: fixed;
+  top: 0;
   left: 0;
   right: 0; /* al posto di dire width 100% */
   background-color: #FA6903;

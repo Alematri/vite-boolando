@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use './variabiles.scss' as *;
 
 body{
   font-family: sans-serif;
@@ -18,6 +18,41 @@ header{
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+
+main{
+  .container{
+    .row{
+      .col{
+        .card{
+          .card-text{
+            .price{
+              font-size: .9rem;
+              span{
+                color: $red;
+                font-weight: bold;
+                &:nth-child(2){
+                  font-size: .85rem;
+                  color: black;
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  color: $white;
+  a{
+    color: $white;
+    &:hover{
+      cursor: pointer;
     }
   }
 }
