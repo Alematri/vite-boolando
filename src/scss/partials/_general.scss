@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  max-width: 100%;
+}

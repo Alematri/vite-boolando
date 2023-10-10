@@ -5,7 +5,11 @@
 </script>
 
 <template>
-  <h1>Hello</h1>
+  
+  <Header />
+  <Main />
+  <Footer />
+
 </template>
 
 <style>
