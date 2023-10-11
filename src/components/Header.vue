@@ -1,6 +1,15 @@
 <script>
+
+  import { main_menu, social_menu } from '../data/menu';
+
   export default{
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return{
+      main_menu,
+      social_menu
+    }
+  }
 }
 </script>
 
@@ -11,9 +20,10 @@
 
       <nav class="main-menu">
         <ul class="d-flex">
-          <li><a href="#">Uomo</a></li>
-          <li><a href="#">Donna</a></li>
-          <li><a href="#">Bambimo</a></li>
+          <li
+          v-for="(item, index) in main_menu"
+          :key="index"
+          ><a :href="item.href">{{ item.text }}</a></li>
         </ul>
       </nav>
       
@@ -25,9 +35,11 @@
 
       <nav class="social-menu">
         <ul class="d-flex">
-          <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+          <li
+          v-for="(item, index) in social_menu.header"
+          :key="index"
+          ><a :href="item.href"><i :class="item.icon_class"></i></a>
+          </li>
         </ul>
       </nav>
 

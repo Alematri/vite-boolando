@@ -1,6 +1,15 @@
 <script>
+
+  import { main_menu, social_menu } from '../data/menu';
+
   export default{
-  name: 'Footer'
+  name: 'Footer',
+  data(){
+    return{
+      main_menu,
+      social_menu
+    }
+  }
 }
 </script>
 
@@ -18,11 +27,10 @@
       <div class="footer-social">
        <h4>Trovaci anche su</h4>
         <ul class="d-flex">
-         <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-         <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-         <li><a href="#"><i class="fa-brands fa-square-pinterest"></i></a></li>
-         <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
+        <li v-for="(item, index) in social_menu.footer"
+         :key="index">
+         <a :href="item.href"><i :class="item.icon_class"></i></a>
+        </li>
         </ul>
       </div>
     </div>
