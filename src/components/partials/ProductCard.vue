@@ -4,11 +4,6 @@
   name: 'ProductCard',
   props:{
     productObj: Object
-  },
-  methods:{
-    getImagePath(img){
-      return new URL(`../../assets/img${img}`, import.meta.url).href;
-    }
   }
 }
 </script>
@@ -18,8 +13,8 @@
     <div class="card">
       <div class="card-image">
         <div class="images">
-          <img :src="getImagePath(productObj.primaryImage)">
-          <img class="secondary-image" :src="getImagePath(productObj.secondaryImage)">
+          <img :src="`/img/+$(productObj.primaryImage)`">
+          <img class="secondary-image" :src="`/img/+$(productObj.secondaryImage)`">
         </div>
             
         <div class="favourite">&hearts;</div>
