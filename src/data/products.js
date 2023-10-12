@@ -12,7 +12,7 @@ export default [
   },
   {
     id:123452,
-    primaryImage: '2.webp',
+    primaryImage: '../../assets/img/2.webp',
     secondaryImage: '2b.webp',
     discount: '-30%',
     sostenibilita: false,
@@ -23,7 +23,7 @@ export default [
   },
   {
     id:123453,
-    primaryImage: '3.webp',
+    primaryImage: '../../assets/img/3.webp',
     secondaryImage: '3b.webp',
     discount: '-30%',
     sostenibilita: false,
@@ -34,7 +34,7 @@ export default [
   },
   {
     id:123454,
-    primaryImage: '4.webp',
+    primaryImage: '../../assets/img/4.webp',
     secondaryImage: '4b.webp',
     discount: '-50%',
     sostenibilita: true,
@@ -45,7 +45,7 @@ export default [
   },
   {
     id:123455,
-    primaryImage: '5.webp',
+    primaryImage: '../../assets/img/5.webp',
     secondaryImage: '5b.webp',
     discount: '-50%',
     sostenibilita: true,
@@ -56,7 +56,7 @@ export default [
   },
   {
     id:123456,
-    primaryImage: '6.webp',
+    primaryImage: '../../assets/img/6.webp',
     secondaryImage: '6b.webp',
     discount: null,
     sostenibilita: false,

@@ -22,7 +22,12 @@
     <div class="container">
 
       <div class="row d-flex flex-wrap">
-        <ProductCard v-for="product in products" :key="product.id"/>
+
+        <ProductCard
+        v-for="product in products"
+        :key="product.id"
+        :productObj="product"
+        />
 
       </div>
 
